@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/css/style.css" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" >
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+            <div class = "container">
+                <h1>Ziyah's Donut Shop</h1>
+                <div class = "navbar-nav">
+                    <!--Modal Btns-->
+                    <button id="aboutGameBtn">About Game</button>
+                    <button id="aboutMeBtn">About Me</button>
+                    <button id="inspirationBtn">Inspiration</button>
+                </div>
+                </div>
+                </nav>
+                <br>
+                <br>
+                    <!-- The Modal -->
+                    <div id="aboutGameModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                          </div>
+                          <div class="modal-body">
+                            <p>This game uses button clicks to create donuts. 
+                                The donuts can be used as currency to buy Auto Clickers and Donut Multipliers, which 
+                                will be used to make even more donuts!</p>
+                          </div>
+                    </div>
+                </div>
+                 <!-- The Modal -->
+                 <div id="aboutMeModal" class="modal">
+                 <!-- Modal content -->
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <span class="close">&times;</span>
+                       </div>
+                       <div class="modal-body">
+                         <p>Naziyah folmar<br>Junior software Developer<br> Phone: (330) 809-74745 <br>Email: ziyahfolmar@gmail.com</p>
+                       </div>
+                 </div>
+             </div>
+              <!-- The Modal -->
+              <div id="inspirationModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <p>The classic cookie clicker game was the inspiration for this project!</p>
+                    </div>
+    </header>
+
+   <div class="donuts"  id="col">
+    <label>Make Some Donuts!</label>
+    <br>
+    <input type="text" name="donutCount" id="donutInputText" maxlength="1" size="1">
+
+    <button id="donutCountBtn">+</button>
+    </div>
+    <div class="row">
+    <div class="autoBaker col">
+    <p>Buy an AutoBaker to make the donuts for you! First you have to sell some Donuts!</p>
+    
+    <label>Current AutoBaker Cost</label>
+    <br>
+    <input type="text" name="autoBakerCost" id="autoBakerCostText" maxlength="1" size="1">:Donuts</input>
+    <br>
+    <br>
+    <label>AutoBakers Owned</label>
+    <br>
+    <input type="text" name="autoBakers" id="autoBakersText" maxlength="1" size="1">
+
+    <button id="autoBakersBtn">+</button>
+    </div>
+
+    <div class="multipler col">
+    <p>The higher your Donut Multipliers count, the more donuts you earn with each click.</p>
+
+    <label>Current Multiplier Cost</label>
+    <br>
+    <input type="text" name="multiplierCost" id="multiplierCostText" maxlength="1" size="1">:Donuts</input>
+    <br>
+    <br>
+    <label>Current Multiplier</label>
+    <br>
+    <input type="text" name="donutMultipliers" id="multiplierText" maxlength="1" size="1">
+
+    <button id="donutMultiplierBtn">+</button>
+    <br>
+    <br>
+    </div>
+    </div>
+
+    <div class="startOver">
+    <button type = "reset" value = "Start Over" id="startOverBtn">Start Over</button>
+    </div>  
+</body>
+<script src="/src/js/DonutShop.js"></script>
+<script src="/src/js/script.js"></script>
+</html>
